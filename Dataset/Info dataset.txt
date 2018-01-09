@@ -1,0 +1,2 @@
+Dataset descargado de https://archive.ics.uci.edu/ml/datasets/News+Aggregator
+Dataset usado "newsCorpora.csv"

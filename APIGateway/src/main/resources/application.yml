@@ -1,0 +1,21 @@
+spring:
+  application:
+     name: api-gateway-service 
+
+zuul:
+  routes:
+    news:
+      path: /news/**
+      serviceId: NEWS-SERVICE
+      stripPrefix: false
+
+# Discovery Server Access
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+
+server:
+  port: 8080

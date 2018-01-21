@@ -5,6 +5,8 @@
  */
 package com.microservices.news;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,33 +21,25 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/news")
 public class ServiceNewsController {
     
+    private static final Logger LOGGER = LoggerFactory.getLogger(ServiceNewsController.class);
+    
     private static final String template = "Hello, %s!";
     
     @Autowired
-    private NewsRepository repository;
-	
-    /**
-     * Say Hello
-     * 
-     * @param name
-     * @return a greeting "Hello" + name	
-     */	
-    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
-    public String greeting2(@PathVariable("name") String name) {
-        return String.format(template, name) ;		
-    }
+    private ServiceNews newsService;
     
     @RequestMapping(value = "/id/{idnews}", method = RequestMethod.GET)
-    public List<News> getNewsByidnews(@PathVariable("idnews") String idnews){
-        System.out.println(idnews);
+    public News getNewsByidnews(@PathVariable("idnews") String idnews){
+        LOGGER.info("getNewsByidnews called for id {}", idnews);
         int idNews = Integer.parseInt(idnews);
-        System.out.println(repository.findByIdnews(idNews));
-        return repository.findByIdnews(idNews);
+        return newsService.getNews(idNews);
     }
 
     @RequestMapping(value = "/date/{timestamp}", method = RequestMethod.GET)
     public List<News> getNewsByTimestamp(@PathVariable("timestamp") String timestamp){
-        return repository.findByTimestamp(timestamp);
+        LOGGER.info("getNewsByTimestamp called for timestamp {}", timestamp);
+        long timestampLong = Long.parseLong(timestamp);
+        return newsService.getNewsTimestamp(timestampLong);
     }
     
 }

@@ -3,6 +3,7 @@
  */
 package com.microservices.news;
 
+import java.io.Serializable;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
@@ -14,7 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
  * @author j3s
  */
 @Document(collection = "news")
-public class News {
+public class News implements Serializable {
     
     @Id
     private ObjectId _id;;

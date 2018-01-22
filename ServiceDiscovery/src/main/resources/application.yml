@@ -5,7 +5,7 @@ server:
 # Como no es un cliente no se registra en Eureka
 eureka:
   instance:
-    hostname: localhost
+    hostname: 159.89.36.53
   client:
     registerWithEureka: false
     fetchRegistry: false

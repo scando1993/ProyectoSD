@@ -14,7 +14,7 @@ eureka:
   client:
     registerWithEureka: false
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://159.89.36.53:1111/eureka/
 
 
 server:

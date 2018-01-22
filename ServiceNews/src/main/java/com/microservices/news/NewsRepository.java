@@ -16,6 +16,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 public interface NewsRepository extends MongoRepository<News, ObjectId> {
     
     public List<News> findByTimestamp(long timestamp);
+    public List<News> findByTimestampBetweenOrderByViewsDesc(long from, long to);
     public News findByIdnews(int idnews);
     
 }

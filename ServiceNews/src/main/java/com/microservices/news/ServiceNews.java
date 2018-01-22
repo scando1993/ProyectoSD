@@ -25,22 +25,20 @@ public class ServiceNews {
     @Autowired
     private NewsRepository repository;
 
-    @CacheEvict(cacheNames="newscache")
     public News getNews(int id) {
         LOGGER.info("getNews called for id {}", id);
         return repository.findByIdnews(id);
     }
 
-    @Cacheable(value = "newscache", key = "#timestamp")
+    @CacheEvict(cacheNames="newscache", key = "#timestamp") //Elimina esa consulta de la caché
     public List<News> getNewsTimestamp(long timestamp) {
         LOGGER.info("getNewsTimestamp called for timestamp {}", timestamp);
         return repository.findByTimestamp(timestamp);
     }
     
+    @Cacheable(value = "newscache", key = "#from") // Agrega este resultado a la caché
     public List<News> getNewsInDay(long from, long to) {
         LOGGER.info("getNewsInDay called for timestamp {}", from, to);
-        System.out.println(from);
-        System.out.println(to);
         return repository.findByTimestampBetweenOrderByViewsDesc(from, to);
     }
 }

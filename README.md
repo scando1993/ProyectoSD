@@ -42,3 +42,15 @@ __Correr los proyectos__
 1. Instalar las dependencias correspondientes usando mvn install
 2. Hacer por cada carpeta mvn clean package
 3. Con el paquete generado hacer java -jar targer/%Nombre del paquete%
+
+---
+
+Servidor MicroServicio
+159.89.36.53:2222
+
+Servidor ApiGateway
+159.89.40.125:8080
+
+Rutas 
+/news/day/%timestamp - epoch%
+159.89.40.125:8080/news/day/1396051200000

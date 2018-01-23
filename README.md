@@ -1,7 +1,7 @@
 # ProyectoSD
 __Requerimientos__
 
-Java 8 o 9, Mongodb, Redis, Python 3
+Java 8 o 9, Mongodb, Redis, Python 3, Maven
 
 ---
 
@@ -35,4 +35,10 @@ __Llenar la base__
 1. En línea de comandos ubicarse donde está el archivo cvs procesado "newsCorpora.csv"
 2. Ejecutar el siguiente comando: mongoimport -d newsdb -c news --type csv --file newsCorpora.csv --headerline
 
+---
 
+__Correr los proyectos__
+
+1. Instalar las dependencias correspondientes usando mvn install
+2. Hacer por cada carpeta mvn clean package
+3. Con el paquete generado hacer java -jar targer/%Nombre del paquete%

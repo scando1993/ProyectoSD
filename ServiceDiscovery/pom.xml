@@ -30,7 +30,26 @@
                     <!-- Eureka para registro y descubrimiento de servicios-->
                     <groupId>org.springframework.cloud</groupId>
                     <artifactId>spring-cloud-starter-eureka-server</artifactId>
+
                 </dependency>
+		<!-- Java 6 = JAX-B Version 2.0   -->
+		<!-- Java 7 = JAX-B Version 2.2.3 -->
+		<!-- Java 8 = JAX-B Version 2.2.8 -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.2.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.8</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>

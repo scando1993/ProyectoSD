@@ -20,4 +20,3 @@ for row in read:
          writer.writerow(row)
 ifile.close()
 output.close()
-

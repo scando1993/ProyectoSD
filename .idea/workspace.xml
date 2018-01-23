@@ -56,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceNewsApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServiceNewsApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNewsApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceNews.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServiceNews.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNews.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="357">
+              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/ServiceNews/pom.xml" />
         <option value="$PROJECT_DIR$/ServiceDiscovery/pom.xml" />
         <option value="$PROJECT_DIR$/ServiceNews/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNews.java" />
         <option value="$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNewsApp.java" />
+        <option value="$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNews.java" />
       </list>
     </option>
   </component>
@@ -489,12 +489,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516590859686</updated>
-      <workItem from="1516590861483" duration="17233000" />
+      <workItem from="1516590861483" duration="17845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17233000" />
+    <option name="totallyTimeSpent" value="17845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -706,21 +706,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNewsApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceNews/src/main/java/com/microservices/news/ServiceNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

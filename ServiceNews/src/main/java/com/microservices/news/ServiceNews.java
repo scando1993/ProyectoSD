@@ -30,13 +30,13 @@ public class ServiceNews {
         return repository.findByIdnews(id);
     }
 
-    @CacheEvict(cacheNames="newscache", key = "#timestamp") //Elimina esa consulta de la caché
+//    @CacheEvict(cacheNames="newscache", key = "#timestamp") //Elimina esa consulta de la caché
     public List<News> getNewsTimestamp(long timestamp) {
         LOGGER.info("getNewsTimestamp called for timestamp {}", timestamp);
         return repository.findByTimestamp(timestamp);
     }
     
-    @Cacheable(value = "newscache", key = "#from") // Agrega este resultado a la caché
+//    @Cacheable(value = "newscache", key = "#from") // Agrega este resultado a la caché
     public List<News> getNewsInDay(long from, long to) {
         LOGGER.info("getNewsInDay called for timestamp {}", from, to);
         return repository.findByTimestampBetweenOrderByViewsDesc(from, to);

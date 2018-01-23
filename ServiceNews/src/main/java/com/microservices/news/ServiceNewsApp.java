@@ -20,7 +20,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 // Registro del servicio en Eureka
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableCaching
+//@EnableCaching
 public class ServiceNewsApp {
     
     
